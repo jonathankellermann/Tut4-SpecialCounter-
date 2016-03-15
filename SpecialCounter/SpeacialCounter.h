@@ -1,4 +1,4 @@
-
+#include <iostream>;
 class SpecialCounter
 {
 private:
@@ -10,6 +10,16 @@ private:
 		int count = start;
 public:
 	SpecialCounter();
-
+	int getStart();
+	int getStop();
+	int getCount();
+	void setStart(int);
+	void setStop(int);
+	void setInc(int);
+	void setDec(int);
+	SpecialCounter operator++();
+	SpecialCounter operator--();
+	SpecialCounter operator++(int);
+	SpecialCounter operator--(int);
 	~SpecialCounter();
 };
